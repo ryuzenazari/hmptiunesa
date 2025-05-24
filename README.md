@@ -13,25 +13,49 @@ Website untuk himpunan mahasiswa dengan fitur pengelolaan anggota, berita, acara
 ```
 website-himpunan/
 ├── frontend/     # Aplikasi client-side dengan Vue.js
+│   ├── src/      # Source code aplikasi frontend
+│   ├── public/   # Asset statis
+│   └── dist/     # Build output
 ├── backend/      # API server dengan Express.js dan MongoDB
+    ├── config/   # Konfigurasi aplikasi
+    ├── controllers/ # Logic pengendali API
+    ├── middleware/ # Middleware validasi & autentikasi
+    ├── models/   # Schema database
+    ├── routes/   # Definisi endpoint API
+    └── seeders/  # Script seeder database
 ```
 
 ### Teknologi yang Digunakan
 
 #### Frontend
-- Vue.js 3 dengan Composition API
-- TypeScript
-- Vite sebagai build tool
-- Tailwind CSS untuk styling
-- Vue Router untuk navigasi
-- Axios untuk HTTP requests
+- Vue.js 3.5 dengan Composition API
+- TypeScript 5.8
+- Vite 6.2 sebagai build tool
+- Pinia 3.0 untuk state management
+- Axios 1.9 untuk HTTP requests
+- ESLint 9.22 & Prettier 3.5 untuk code quality
 
 #### Backend
-- Node.js dengan Express.js
+- Node.js dengan Express.js 4.18
 - MongoDB sebagai database
-- Mongoose ODM
-- JWT untuk autentikasi
+- Mongoose 8.0 ODM
+- JWT 9.0 untuk autentikasi
 - Multer untuk upload file
+- Bcrypt 2.4 untuk enkripsi password
+
+### API Endpoints
+
+Backend menyediakan API untuk berbagai fitur:
+
+- `/api/users` - Manajemen pengguna dan autentikasi
+- `/api/organization` - Informasi organisasi himpunan
+- `/api/events` - Pengelolaan acara dan kegiatan
+- `/api/news` - Artikel berita dan pengumuman
+- `/api/gallery` - Galeri foto dan video kegiatan
+- `/api/lecturers` - Data dosen dan pembimbing
+- `/api/functionaries` - Pengurus himpunan
+- `/api/members` - Data anggota himpunan
+- `/api/projects` - Proyek-proyek himpunan
 
 ### Cara Menjalankan
 
@@ -67,6 +91,16 @@ website-himpunan/
    ```
 6. Backend akan berjalan di http://localhost:5000
 
+### Seeding Database
+
+Untuk mengisi database dengan data awal:
+
+```bash
+cd backend
+npm run seed          # Menjalankan semua seeder
+npm run seed:event    # Hanya menjalankan seeder event
+```
+
 ## Fitur Utama Website
 
 1. **Manajemen Keanggotaan**
@@ -96,30 +130,6 @@ website-himpunan/
 ## Program Konverter Data Anggota Himpunan
 
 Kumpulan program untuk mengelola data anggota himpunan dalam format JSON dan teks.
-
-### Daftar Program
-
-1. `member_converter.py` - Program utama dengan menu interaktif yang mencakup semua fungsionalitas
-2. `converter.py` - Program untuk mengonversi data teks anggota menjadi JSON
-3. `json_to_txt.py` - Program untuk mengonversi data JSON anggota menjadi teks
-4. `create_member_txt.py` - Program untuk membuat file teks anggota dari input manual
-
-### Cara Penggunaan
-
-#### Program Utama (`member_converter.py`)
-
-Program ini mencakup semua fungsionalitas dalam satu aplikasi dengan menu interaktif.
-
-```bash
-python member_converter.py
-```
-
-Menu yang tersedia:
-1. Konversi TXT ke JSON
-2. Konversi JSON ke TXT  
-3. Buat file TXT anggota (input manual)
-4. Buat file TXT anggota (input batch)
-5. Gabungkan dua file JSON
 
 ### Format Data
 
