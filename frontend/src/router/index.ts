@@ -51,11 +51,6 @@ const router = createRouter({
       component: () => import('../views/MemberView.vue'),
     },
     {
-      path: '/daftar-anggota',
-      name: 'membership',
-      redirect: '/register',
-    },
-    {
       path: '/dosen',
       name: 'dosen',
       component: () => import('../views/DosenView.vue'),
@@ -66,29 +61,21 @@ const router = createRouter({
       component: () => import('../views/DosenDetailView.vue'),
     },
     {
-      path: '/login',
-      name: 'login',
-      component: () => import('../views/LoginView.vue'),
-    },
-    {
-      path: '/register',
-      name: 'register',
-      component: () => import('../views/RegisterView.vue'),
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
-    },
-    {
       path: '/projects',
       name: 'projects',
       component: () => import('../views/ProjectsView.vue'),
     },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue'),
+    }
   ],
 })
 
+// Navigation guard untuk route yang memerlukan autentikasi
 router.beforeEach((to, from, next) => {
+  // Scroll to top pada setiap navigasi
   window.scrollTo(0, 0)
   next()
 })

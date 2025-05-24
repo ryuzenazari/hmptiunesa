@@ -1,8 +1,20 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const isMenuOpen = ref(false)
+
+// Check if current route is admin route
+const isAdminRoute = computed(() => {
+  return route.path.startsWith('/admin')
+})
+
+// Check if user is logged in
+const isLoggedIn = computed(() => {
+  return localStorage.getItem('token') !== null
+})
 
 // Fungsi untuk toggle menu mobile
 const toggleMenu = () => {
@@ -20,8 +32,8 @@ const closeMenu = () => {
 
 <template>
   <div class="app-container">
-    <!-- Navbar -->
-    <header class="navbar">
+    <!-- Navbar - Sembunyikan pada rute admin -->
+    <header class="navbar" v-if="!isAdminRoute">
       <a href="/" class="navbar-logo" style="text-decoration: none">
         <img alt="Logo HIMTI" class="logo" src="@/assets/logo.svg" width="40" height="40" />
         <div class="logo-text">HMP TI UNESA</div>
@@ -70,11 +82,13 @@ const closeMenu = () => {
       </div>
     </header>
 
-    <main>
+    <!-- Tambahkan padding top hanya untuk halaman non-admin -->
+    <main :class="{ 'main-with-navbar': !isAdminRoute }">
       <RouterView />
     </main>
 
-    <footer class="full-width-footer">
+    <!-- Footer - Sembunyikan pada rute admin -->
+    <footer class="full-width-footer" v-if="!isAdminRoute">
       <div class="footer-container">
         <div class="footer-main">
           <div class="footer-brand">
@@ -322,6 +336,11 @@ a {
   overflow-x: hidden;
 }
 
+/* Main content with navbar padding */
+.main-with-navbar {
+  padding-top: 70px;
+}
+
 /* Navbar Styling */
 .navbar {
   position: fixed;
@@ -454,13 +473,6 @@ a {
 
 .mobile-nav a.router-link-active {
   color: var(--primary-color);
-}
-
-/* Main Content */
-main {
-  padding-top: 70px;
-  flex: 1;
-  width: 100%;
 }
 
 /* Footer Styling */
