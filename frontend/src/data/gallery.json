@@ -1,0 +1,160 @@
+{
+  "categories": [
+    { "id": "all", "name": "Semua", "icon": "🖼️" },
+    { "id": "events", "name": "Kegiatan", "icon": "🎉" },
+    { "id": "workshops", "name": "Workshop", "icon": "💻" },
+    { "id": "competitions", "name": "Kompetisi", "icon": "🏆" },
+    { "id": "gatherings", "name": "Gathering", "icon": "👥" }
+  ],
+  "galleryItems": [
+    {
+      "id": 1,
+      "imageUrl": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN0dWRlbnRzJTIwZXZlbnR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Seminar Teknologi AI - Foto 1",
+      "category": "events",
+      "date": "15 Mei 2024",
+      "description": "Pembicara sedang menjelaskan perkembangan teknologi AI terkini.",
+      "eventId": 1
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXZlbnQlMjB3b3Jrc2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Workshop UI/UX Design - Foto 1",
+      "category": "workshops",
+      "date": "20 April 2024",
+      "description": "Peserta sedang mengikuti workshop UI/UX design.",
+      "eventId": 2
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "title": "Hackathon UNESA 2024 - Foto 1",
+      "category": "competitions",
+      "date": "5 Maret 2024",
+      "description": "Tim sedang berdiskusi mengenai solusi aplikasi.",
+      "eventId": 3
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHN0dWRlbnRzJTIwZXZlbnR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Pelatihan React Native - Foto 1",
+      "category": "workshops",
+      "date": "10 Februari 2024",
+      "description": "Instruktur sedang menjelaskan dasar-dasar React Native.",
+      "eventId": 4
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3R1ZGVudHMlMjBnYXRoZXJpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+      "title": "IT Gathering HMP TI - Foto 1",
+      "category": "gatherings",
+      "date": "25 Januari 2024",
+      "description": "Suasana networking event antar anggota himpunan.",
+      "eventId": 5
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHN0dWRlbnRzJTIwZXZlbnR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Workshop Machine Learning - Foto 1",
+      "category": "workshops",
+      "date": "15 Januari 2024",
+      "description": "Penjelasan tentang algoritma machine learning.",
+      "eventId": 6
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://images.unsplash.com/photo-1506377711776-dbdc2f3c20d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3R1ZGVudHMlMjBldmVudHxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60",
+      "title": "Seminar Cyber Security - Foto 1",
+      "category": "events",
+      "date": "8 Desember 2023",
+      "description": "Peserta sedang mendengarkan materi keamanan siber.",
+      "eventId": 7
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3R1ZGVudHMlMjBldmVudHxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60",
+      "title": "Program Mentoring HMP TI - Foto 1",
+      "category": "gatherings",
+      "date": "20 November 2023",
+      "description": "Sesi mentoring soft skill oleh senior.",
+      "eventId": 8
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWRlbnRzJTIwZXZlbnR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Kompetisi Programming - Foto 1",
+      "category": "competitions",
+      "date": "5 Oktober 2023",
+      "description": "Peserta sedang mengerjakan soal pemrograman.",
+      "eventId": 9
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3R1ZGVudHMlMjBldmVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Seminar Blockchain - Foto 1",
+      "category": "events",
+      "date": "1 Oktober 2023",
+      "description": "Presentasi teknologi blockchain oleh pakar industri.",
+      "eventId": 10
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3R1ZGVudHMlMjBldmVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Workshop Flutter - Foto 1",
+      "category": "workshops",
+      "date": "25 September 2023",
+      "description": "Pengenalan framework Flutter untuk pengembangan aplikasi mobile.",
+      "eventId": 11
+    },
+    {
+      "id": 12,
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3R1ZGVudHMlMjBldmVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Hackathon Nasional - Foto 1",
+      "category": "competitions",
+      "date": "15 September 2023",
+      "description": "Suasana kompetisi pengembangan aplikasi tingkat nasional.",
+      "eventId": 12
+    },
+    {
+      "id": 13,
+      "imageUrl": "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWklMjBsZWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Seminar Teknologi AI - Foto 2",
+      "category": "events",
+      "date": "15 Mei 2024",
+      "description": "Peserta seminar sedang berinteraksi dengan demo AI.",
+      "eventId": 1
+    },
+    {
+      "id": 14,
+      "imageUrl": "https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWklMjBsZWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Seminar Teknologi AI - Foto 3",
+      "category": "events",
+      "date": "15 Mei 2024",
+      "description": "Diskusi panel tentang etika AI.",
+      "eventId": 1
+    },
+    {
+      "id": 15,
+      "imageUrl": "https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dWklMjB1eHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Workshop UI/UX Design - Foto 2",
+      "category": "workshops",
+      "date": "20 April 2024",
+      "description": "Peserta sedang merancang wireframe aplikasi.",
+      "eventId": 2
+    },
+    {
+      "id": 16,
+      "imageUrl": "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aGFja2F0aG9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "title": "Hackathon UNESA 2024 - Foto 2",
+      "category": "competitions",
+      "date": "5 Maret 2024",
+      "description": "Tim finalis mempresentasikan solusi mereka.",
+      "eventId": 3
+    }
+  ],
+  "galleryStats": [
+    { "id": 1, "number": "250+", "label": "Foto Kegiatan" },
+    { "id": 2, "number": "45+", "label": "Event Terdokumentasi" },
+    { "id": 3, "number": "12+", "label": "Album Tahunan" }
+  ]
+}

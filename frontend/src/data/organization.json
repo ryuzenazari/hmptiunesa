@@ -1,0 +1,97 @@
+{
+  "statsData": [
+    { "id": 1, "number": "1+", "label": "Tahun Berdiri" },
+    { "id": 2, "number": "900+", "label": "Anggota Aktif" },
+    { "id": 3, "number": "25+", "label": "Prestasi Nasional" }
+  ],
+  "infoData": [
+    {
+      "icon": "icon-calendar",
+      "title": "Didirikan",
+      "description": "11 Mei 2024"
+    },
+    {
+      "icon": "icon-users",
+      "title": "Anggota Aktif",
+      "description": "900+ Mahasiswa"
+    },
+    {
+      "icon": "icon-award",
+      "title": "Prestasi",
+      "description": "25+ Penghargaan"
+    }
+  ],
+  "departments": [
+    {
+      "title": "Departemen Akademik, Keilmuan, dan IT",
+      "coordinator": "Ketua: Mirsa Alif Putra",
+      "members": [
+        "Ferdi Al Majid Firdaus",
+        "Arstyo Dyo Wiratama",
+        "Usnida Faradila",
+        "Bee Nayaka Athalah Muchamad",
+        "Soma Zenwira WYW",
+        "Mahdi Ghani Afriza",
+        "Fatih Almas Assyahba'",
+        "Aurellia Inez Naidabilah"
+      ]
+    },
+    {
+      "title": "Departemen Pengembangan Sumber Daya Mahasiswa",
+      "coordinator": "Ketua: Nur Lintang Enjang Kinasih",
+      "members": [
+        "M. Fahad Hukma Ridho",
+        "Anggik Rahmad Romadhon",
+        "Reihan Alvarizy",
+        "M. Nabil Ridho Farabi"
+      ]
+    },
+    {
+      "title": "Departemen Hubungan Masyarakat",
+      "coordinator": "Ketua: Ahmad Daffa Fachriansyah",
+      "members": [
+        "Rayyan",
+        "Kenzie Rofif Dhaniswara",
+        "Aurora Artika Yulinda Nofa Putri",
+        "Abdi Fysabilillah"
+      ]
+    },
+    {
+      "title": "Departemen Kewirausahaan",
+      "coordinator": "Ketua: Fayzul Haq",
+      "members": ["Akbar Rezy Hanara Setiyawan", "Brian Fawwaz Atmajaya"]
+    },
+    {
+      "title": "Departemen Minat dan Bakat",
+      "coordinator": "Ketua: Ahmad Azmiy Fawwaz",
+      "members": ["Hilmi Alwan", "Muhammad Hikmal Kurniah"]
+    },
+    {
+      "title": "Departemen Sosial Masyarakat",
+      "coordinator": "Ketua: Moch. Fanny Andriansyah",
+      "members": ["Muhammad Fiqih Mu'azaidin", "Wildandy Dwi Ananda"]
+    }
+  ],
+  "programs": [
+    {
+      "icon": "icon-calendar",
+      "title": "Ameliorer",
+      "description": "Program pengenalan dan pembinaan mahasiswa baru yang bertujuan menanamkan nilai moral, etika, kesatuan, dan karakter positif sebagai mahasiswa Teknik Informatika."
+    },
+    {
+      "icon": "icon-project",
+      "title": "X Project",
+      "description": "Acara tahunan kolaboratif antara HMP TI, HMP SI, dan HMP PTI UNESA yang mencakup pelatihan, pembelajaran, perlombaan, IT expo, kewirausahaan, dan pertunjukan."
+    },
+    {
+      "icon": "icon-code",
+      "title": "Logicodix",
+      "description": "Kompetisi pemrograman tingkat nasional untuk siswa SMA/SMK yang fokus pada pengembangan kemampuan penalaran logis dan pemrograman melalui penyelesaian masalah."
+    },
+    {
+      "icon": "icon-camp",
+      "title": "Informatics Big Camp",
+      "description": "Program pengabdian masyarakat yang menunjukkan komitmen mahasiswa Teknik Informatika dalam bersinergi dan membantu masyarakat melalui penerapan teknologi."
+    }
+  ]
+}

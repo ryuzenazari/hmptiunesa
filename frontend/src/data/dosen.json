@@ -1,0 +1,297 @@
+{
+  "expertiseFields": [
+    { "id": "all", "name": "Semua Bidang Keahlian" },
+    { "id": "ai", "name": "Kecerdasan Buatan" },
+    { "id": "database", "name": "Basis Data" },
+    { "id": "network", "name": "Jaringan Komputer" },
+    { "id": "software", "name": "Rekayasa Perangkat Lunak" },
+    { "id": "multimedia", "name": "Multimedia" }
+  ],
+  "dosenItems": [
+    {
+      "id": 1,
+      "name": "Aditya Prapanca, S.T., M.Kom.",
+      "specialization": "Rekayasa Perangkat Lunak & Pemrograman",
+      "email": "aditya.prapanca@unesa.ac.id",
+      "nidn": "197411012003121001",
+      "bidang": "software",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/197411012003121001.jpg",
+      "position": "Ketua Program Studi Teknik Informatika",
+      "education": [
+        "S2 Teknik Informatika, Institut Teknologi Sepuluh Nopember (2010)",
+        "S1 Teknik Informatika, Institut Teknologi Sepuluh Nopember (2003)"
+      ],
+      "research": [
+        "Pengembangan Web Framework untuk Aplikasi Enterprise",
+        "Algoritma Optimasi pada Perangkat Lunak",
+        "Sistem Informasi Akademik untuk Pendidikan Tinggi"
+      ],
+      "teaching": ["Pemrograman Web", "Rekayasa Perangkat Lunak", "Pemrograman Berorientasi Objek", "Analisis dan Perancangan Sistem"],
+      "office_hours": "Senin & Kamis, 10.00 - 12.00",
+      "room": "Gedung A1, Ruang 205",
+      "phone": "+6281234567890",
+      "publications": [
+        {
+          "title": "Implementasi Arsitektur Microservices pada Sistem Akademik Universitas",
+          "journal": "Jurnal Informatika dan Komputer",
+          "year": 2022,
+          "authors": "Aditya Prapanca, Budi Santoso, Dewi Lestari",
+          "doi": "10.1109/JPTIK.2022.123456",
+          "citations": 17
+        },
+        {
+          "title": "Framework Pengembangan Aplikasi Web Berbasis Model-View-Controller",
+          "journal": "Jurnal Teknologi Informasi dan Ilmu Komputer",
+          "year": 2021,
+          "authors": "Aditya Prapanca, Eko Prasetyo",
+          "doi": "10.1007/JTII.2021.01234-z",
+          "citations": 23
+        }
+      ],
+      "schedule": [
+        {
+          "day": "Senin",
+          "time": "08:00 - 09:40",
+          "course": "Pemrograman Web",
+          "location": "Lab RPL 301"
+        },
+        {
+          "day": "Rabu",
+          "time": "13:00 - 14:40",
+          "course": "Analisis dan Perancangan Sistem",
+          "location": "Ruang A1-205"
+        }
+      ],
+      "stats": {
+        "publications": 26,
+        "citations": 342,
+        "h_index": 8,
+        "active_projects": 5
+      },
+      "socials": {
+        "scholar": "https://scholar.google.com/citations?user=12345",
+        "scopus": "https://www.scopus.com/authid/detail.uri?authorId=123456789",
+        "sinta": "https://sinta.kemdikbud.go.id/authors/profile/12345"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Anita Qoiriah, S.Kom., M.Kom.",
+      "specialization": "Basis Data & Pemrograman",
+      "email": "anita.qoiriah@unesa.ac.id",
+      "nidn": "196901251995122001",
+      "bidang": "database",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/196901251995122001.jpg",
+      "position": "Kepala Laboratorium Basis Data",
+      "education": [
+        "S2 Ilmu Komputer, Institut Teknologi Sepuluh Nopember (2007)",
+        "S1 Ilmu Komputer, Universitas Brawijaya (1994)"
+      ],
+      "research": [
+        "Optimasi Query pada Database Relasional",
+        "Data Mining untuk Prediksi Performa Akademik",
+        "Sistem Informasi Geografis untuk Pemetaan Pendidikan"
+      ],
+      "teaching": ["Basis Data", "Pemrograman Database", "Data Mining", "Sistem Informasi Geografis"],
+      "office_hours": "Selasa & Kamis, 13.00 - 15.00",
+      "room": "Gedung A3, Ruang 302",
+      "phone": "+6281298765432",
+      "publications": [
+        {
+          "title": "Implementasi Algoritma K-Means untuk Analisis Pola Kelulusan Mahasiswa",
+          "journal": "Jurnal Informatika dan Sistem Informasi",
+          "year": 2022,
+          "authors": "Anita Qoiriah, Budi Santoso",
+          "doi": "10.1109/JISI.2022.987654",
+          "citations": 12
+        },
+        {
+          "title": "Optimasi Query pada Database Berskala Besar menggunakan Indexing",
+          "journal": "Jurnal Ilmiah Teknologi dan Informasi",
+          "year": 2020,
+          "authors": "Anita Qoiriah, Diana Putri",
+          "doi": "10.1007/JITI.2020.56789-x",
+          "citations": 18
+        }
+      ],
+      "schedule": [
+        {
+          "day": "Selasa",
+          "time": "09:30 - 11:10",
+          "course": "Basis Data",
+          "location": "Lab DB 204"
+        },
+        {
+          "day": "Kamis",
+          "time": "10:20 - 12:00",
+          "course": "Data Mining",
+          "location": "Ruang A3-301"
+        }
+      ],
+      "stats": {
+        "publications": 19,
+        "citations": 215,
+        "h_index": 7,
+        "active_projects": 3
+      },
+      "socials": {
+        "scholar": "https://scholar.google.com/citations?user=67890",
+        "scopus": "https://www.scopus.com/authid/detail.uri?authorId=987654321",
+        "sinta": "https://sinta.kemdikbud.go.id/authors/profile/67890"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Dr. Yuni Yamasari, S.Kom., M.Kom.",
+      "specialization": "Kecerdasan Buatan & Pemrograman",
+      "email": "yuni.yamasari@unesa.ac.id",
+      "nidn": "197506022003122001",
+      "bidang": "ai",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/197506022003122001.jpg",
+      "position": "Kepala Laboratorium Kecerdasan Buatan",
+      "education": [
+        "S3 Ilmu Komputer, Universitas Indonesia (2018)",
+        "S2 Teknik Informatika, Institut Teknologi Sepuluh Nopember (2006)",
+        "S1 Ilmu Komputer, Universitas Gadjah Mada (2000)"
+      ],
+      "research": [
+        "Penerapan Machine Learning untuk Pengenalan Pola",
+        "Sistem Pakar untuk Diagnosis Medis",
+        "Pengolahan Citra untuk Pengenalan Objek"
+      ],
+      "teaching": ["Kecerdasan Buatan", "Machine Learning", "Pengolahan Citra Digital", "Pemrograman Python"],
+      "office_hours": "Senin & Rabu, 13.00 - 15.00",
+      "room": "Gedung A2, Ruang 401",
+      "phone": "+6281345678901",
+      "publications": [
+        {
+          "title": "Convolutional Neural Network untuk Deteksi Penyakit Tanaman Padi",
+          "journal": "Jurnal Kecerdasan Buatan Indonesia",
+          "year": 2023,
+          "authors": "Yuni Yamasari, Ahmad Rizky, Sinta Wijaya",
+          "doi": "10.1109/JKBI.2023.456789",
+          "citations": 8
+        },
+        {
+          "title": "Sistem Pakar Berbasis Aturan untuk Diagnosis Penyakit Jantung",
+          "journal": "Jurnal Informatika Kesehatan",
+          "year": 2021,
+          "authors": "Yuni Yamasari, Budi Santoso",
+          "doi": "10.1007/JIK.2021.56789-z",
+          "citations": 32
+        }
+      ],
+      "schedule": [
+        {
+          "day": "Senin",
+          "time": "10:20 - 12:00",
+          "course": "Kecerdasan Buatan",
+          "location": "Lab AI 401"
+        },
+        {
+          "day": "Rabu",
+          "time": "15:30 - 17:10",
+          "course": "Machine Learning",
+          "location": "Ruang A2-405"
+        }
+      ],
+      "stats": {
+        "publications": 35,
+        "citations": 476,
+        "h_index": 12,
+        "active_projects": 4
+      },
+      "socials": {
+        "scholar": "https://scholar.google.com/citations?user=13579",
+        "scopus": "https://www.scopus.com/authid/detail.uri?authorId=135790246",
+        "sinta": "https://sinta.kemdikbud.go.id/authors/profile/13579"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Agus Prihanto, S.T., M.Kom.",
+      "specialization": "Jaringan Komputer & Keamanan Sistem",
+      "email": "agus.prihanto@unesa.ac.id",
+      "nidn": "197908062006041001",
+      "bidang": "network",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/197908062006041001.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Dr. Ricky Eka Putra, S.Kom., M.Kom.",
+      "specialization": "Kecerdasan Buatan & Machine Learning",
+      "email": "ricky.eka@unesa.ac.id",
+      "nidn": "198701162018031001",
+      "bidang": "ai",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/198701162018031001.jpg"
+    },
+    {
+      "id": 6,
+      "name": "I Made Suartana, S.Kom., M.Kom.",
+      "specialization": "Multimedia & Pemrograman",
+      "email": "made.suartana@unesa.ac.id",
+      "nidn": "198411242015041003",
+      "bidang": "multimedia",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/198411242015041003.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Naim Rochmawati, S.Kom., M.T.",
+      "specialization": "Basis Data & Data Mining",
+      "email": "naim.rochmawati@unesa.ac.id",
+      "nidn": "197512032005012001",
+      "bidang": "database",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/197512032005012001.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Paramitha Nerisafitra, S.ST., M.Kom.",
+      "specialization": "Kecerdasan Buatan & Natural Language Processing",
+      "email": "paramitha.nerisafitra@unesa.ac.id",
+      "nidn": "198905292019032013",
+      "bidang": "ai",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/198905292019032013.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Ronggo Alit, S.Kom., M.M., M.T.",
+      "specialization": "Rekayasa Perangkat Lunak & Manajemen Proyek",
+      "email": "ronggo.alit@unesa.ac.id",
+      "nidn": "198412082020121002",
+      "bidang": "software",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/198412082020121002.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Ervin Yohannes, S.Kom., M.Kom., M.Sc., Ph.D",
+      "specialization": "Kecerdasan Buatan & Machine Learning",
+      "email": "ervin.yohannes@unesa.ac.id",
+      "nidn": "202309114",
+      "bidang": "ai",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/202309114.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Farhanna Mar'i, S.Kom., M.Kom.",
+      "specialization": "Rekayasa Perangkat Lunak & Pemrograman",
+      "email": "farhanna.mari@unesa.ac.id",
+      "nidn": "199603072024062003",
+      "bidang": "software",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/199603072024062003.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Rifqi Abdillah, S.Tr.T., M.Kom.",
+      "specialization": "Multimedia & Computer Vision",
+      "email": "rifqi.abdillah@unesa.ac.id",
+      "nidn": "199911012024061001",
+      "bidang": "multimedia",
+      "imageUrl": "https://i-sdm.unesa.ac.id/assets/images/kepegawaian/pegawai/199911012024061001.jpg"
+    }
+  ],
+  "dosenStats": [
+    { "id": 1, "number": "30+", "label": "Dosen Aktif" },
+    { "id": 2, "number": "5", "label": "Bidang Keahlian" },
+    { "id": 3, "number": "150+", "label": "Publikasi Ilmiah" }
+  ]
+}

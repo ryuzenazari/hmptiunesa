@@ -1,0 +1,114 @@
+{
+  "categories": [
+    { "id": "program-kerja", "name": "Program Kerja", "count": 15 },
+    { "id": "teknologi", "name": "Teknologi", "count": 23 },
+    { "id": "akademik", "name": "Akademik", "count": 10 },
+    { "id": "organisasi", "name": "Organisasi", "count": 8 },
+    { "id": "kerjasama", "name": "Kerjasama", "count": 5 },
+    { "id": "beasiswa", "name": "Beasiswa", "count": 7 },
+    { "id": "karir", "name": "Karir", "count": 12 }
+  ],
+  "newsItems": [
+    {
+      "id": 1,
+      "imageUrl": "https://picsum.photos/id/234/1200/600",
+      "title": "HIMTI UNESA Menyelenggarakan Bootcamp Programming Pertama di Tahun 2023",
+      "category": "program-kerja",
+      "date": "15 Mei 2023",
+      "description": "Himpunan Mahasiswa Teknik Informatika (HIMTI) UNESA sukses menyelenggarakan bootcamp programming perdana di tahun 2023. Acara yang diikuti oleh lebih dari 100 mahasiswa ini bertujuan untuk meningkatkan kemampuan coding anggota himpunan...",
+      "content": "Himpunan Mahasiswa Teknik Informatika (HIMTI) UNESA sukses menyelenggarakan bootcamp programming perdana di tahun 2023. Acara yang diikuti oleh lebih dari 100 mahasiswa ini bertujuan untuk meningkatkan kemampuan coding anggota himpunan.<br><br>Bootcamp ini berlangsung selama 3 hari dengan materi yang difokuskan pada pengembangan aplikasi web menggunakan teknologi modern seperti React, Node.js, dan MongoDB. Para peserta dibimbing langsung oleh alumni UNESA yang kini bekerja di perusahaan teknologi terkemuka.<br><br>Menurut ketua panitia, Muhammad Rizki, bootcamp ini dirancang untuk memberikan pengalaman praktis bagi mahasiswa dalam mengembangkan aplikasi yang siap digunakan di dunia kerja. \"Kami berharap kegiatan ini dapat menjadi langkah awal bagi teman-teman untuk terus mengembangkan skill programming mereka,\" ujarnya.<br><br>Di akhir bootcamp, peserta berkesempatan untuk memamerkan proyek yang telah mereka kembangkan selama program berlangsung. Tiga tim terbaik juga mendapatkan kesempatan magang di perusahaan partner HIMTI UNESA.",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://picsum.photos/id/180/600/400",
+      "title": "Workshop UI/UX Design Bersama Praktisi Industri",
+      "category": "teknologi",
+      "date": "10 Mei 2023",
+      "description": "HIMTI UNESA mengadakan workshop UI/UX design dengan mengundang beberapa praktisi dari industri teknologi terkemuka...",
+      "content": "HIMTI UNESA mengadakan workshop UI/UX design dengan mengundang beberapa praktisi dari industri teknologi terkemuka. Workshop yang diadakan secara hybrid ini dihadiri oleh lebih dari 200 mahasiswa baik secara online maupun offline.<br><br>Workshop UI/UX ini menghadirkan pembicara dari perusahaan teknologi ternama seperti Tokopedia, Gojek, dan Traveloka. Para pembicara berbagi pengalaman dan tips praktis tentang bagaimana merancang antarmuka pengguna yang tidak hanya menarik secara visual tetapi juga memberikan pengalaman yang baik bagi pengguna.<br><br>Selama workshop, peserta juga berkesempatan untuk praktik langsung dengan mengerjakan studi kasus desain aplikasi mobile. Hasil karya terbaik peserta akan mendapatkan feedback langsung dari para praktisi industri, serta berpeluang untuk magang di perusahaan-perusahaan tersebut."
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://picsum.photos/id/160/600/400",
+      "title": "Mahasiswa TI UNESA Raih Juara dalam Hackathon Nasional",
+      "category": "akademik",
+      "date": "5 Mei 2023",
+      "description": "Tim mahasiswa Teknik Informatika UNESA berhasil meraih juara 2 dalam kompetisi hackathon tingkat nasional yang diadakan oleh...",
+      "content": "Tim mahasiswa Teknik Informatika UNESA berhasil meraih juara 2 dalam kompetisi hackathon tingkat nasional yang diadakan oleh Kementerian Pendidikan dan Kebudayaan. Kompetisi yang berlangsung selama 48 jam non-stop ini diikuti oleh ratusan tim dari berbagai perguruan tinggi di Indonesia.<br><br>Tim UNESA yang terdiri dari 5 mahasiswa program studi Teknik Informatika ini mengembangkan aplikasi bernama \"EduConnect\", sebuah platform yang menghubungkan siswa dengan mentor akademik secara real-time menggunakan teknologi AI.<br><br>Menurut ketua tim, Anita Wijaya, ide aplikasi ini muncul dari pengamatannya tentang sulitnya siswa mendapatkan bantuan akademik yang cepat dan tepat di luar jam sekolah. \"EduConnect hadir untuk memecahkan masalah ini dengan menghubungkan siswa dengan mentor yang sesuai dengan kebutuhan mereka,\" jelasnya.<br><br>Kemenangan ini membawa tim UNESA untuk mewakili Indonesia dalam kompetisi hackathon internasional yang akan diselenggarakan di Singapura bulan depan."
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://picsum.photos/id/119/600/400",
+      "title": "Pelantikan Pengurus Baru HIMTI UNESA Periode 2023-2024",
+      "category": "organisasi",
+      "date": "28 April 2023",
+      "description": "Himpunan Mahasiswa Teknik Informatika UNESA menggelar acara pelantikan pengurus baru untuk periode kepengurusan 2023-2024...",
+      "content": "Himpunan Mahasiswa Teknik Informatika UNESA menggelar acara pelantikan pengurus baru untuk periode kepengurusan 2023-2024. Acara yang berlangsung di Auditorium UNESA ini dihadiri oleh jajaran dekanat, dosen, alumni, serta mahasiswa aktif program studi Teknik Informatika.<br><br>Dalam sambutannya, Ketua Jurusan Teknik Informatika, Dr. Bambang Sutejo, M.Kom., menekankan pentingnya peran himpunan mahasiswa dalam pengembangan soft skill dan hard skill mahasiswa. \"HIMTI UNESA telah menjadi wadah yang efektif untuk mahasiswa mengembangkan potensi diri di luar kegiatan akademik,\" ujarnya.<br><br>Pelantikan ini menandai pergantian estafet kepemimpinan dari Reza Pratama kepada Dian Kusuma sebagai ketua HIMTI UNESA periode 2023-2024. Dalam pidato pertamanya sebagai ketua, Dian menyampaikan komitmennya untuk melanjutkan program-program unggulan yang telah berjalan serta membawa inovasi baru untuk kemajuan himpunan.<br><br>Acara pelantikan ditutup dengan penampilan dari UKM Musik UNESA dan penandatanganan dokumen serah terima jabatan."
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://picsum.photos/id/239/600/400",
+      "title": "HIMTI UNESA Jalin Kerjasama dengan Perusahaan Teknologi",
+      "category": "kerjasama",
+      "date": "20 April 2023",
+      "description": "Dalam upaya meningkatkan kualitas SDM anggotanya, HIMTI UNESA menjalin kerjasama dengan beberapa perusahaan teknologi untuk...",
+      "content": "Dalam upaya meningkatkan kualitas SDM anggotanya, HIMTI UNESA menjalin kerjasama dengan beberapa perusahaan teknologi untuk program magang dan pelatihan. Kerjasama ini ditandai dengan penandatanganan MoU antara HIMTI UNESA dengan lima perusahaan teknologi terkemuka di Indonesia.<br><br>Melalui kerjasama ini, mahasiswa Teknik Informatika UNESA akan mendapatkan kesempatan untuk magang di perusahaan-perusahaan tersebut serta mengikuti berbagai pelatihan eksklusif yang diadakan oleh para profesional industri. Selain itu, perusahaan juga akan berpartisipasi dalam job fair dan campus hiring yang diadakan oleh HIMTI UNESA.<br><br>\"Kerjasama ini merupakan langkah strategis untuk mempersiapkan mahasiswa kami menghadapi dunia kerja. Dengan pengalaman langsung di industri, mahasiswa akan lebih siap bersaing di era digital ini,\" kata Pak Suprianto, Ketua Program Studi Teknik Informatika UNESA."
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://picsum.photos/id/183/600/400",
+      "title": "Seminar Online: Perkembangan Artificial Intelligence di Indonesia",
+      "category": "teknologi",
+      "date": "15 April 2023",
+      "description": "HIMTI UNESA mengadakan seminar online dengan tema \"Perkembangan Artificial Intelligence di Indonesia\" dengan mengundang...",
+      "content": "HIMTI UNESA mengadakan seminar online dengan tema \"Perkembangan Artificial Intelligence di Indonesia\" dengan mengundang pakar AI dari berbagai latar belakang. Seminar yang dihadiri lebih dari 500 peserta dari seluruh Indonesia ini membahas tentang perkembangan terkini teknologi AI dan implementasinya di berbagai sektor.<br><br>Pembicara utama dalam seminar ini adalah Dr. Budi Rahardjo, pakar keamanan siber dan AI dari ITB, yang membahas tentang potensi dan tantangan pengembangan AI di Indonesia. Selain itu, hadir juga CTO dari start-up AI lokal yang berbagi pengalaman mereka dalam mengembangkan produk berbasis AI untuk pasar Indonesia.<br><br>Seminar ini juga menjadi ajang diskusi tentang isu etika dalam pengembangan AI, termasuk privasi data, bias algoritma, dan dampak sosial dari otomatisasi. Para peserta juga mendapatkan insight tentang karir di bidang AI yang semakin berkembang di Indonesia."
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://picsum.photos/id/19/600/400",
+      "title": "HIMTI Mengadakan Pelatihan Digital Marketing untuk Mahasiswa",
+      "category": "program-kerja",
+      "date": "10 April 2023",
+      "description": "Sebagai bagian dari program kerja tahunan, HIMTI UNESA mengadakan pelatihan digital marketing yang diikuti oleh mahasiswa...",
+      "content": "Sebagai bagian dari program kerja tahunan, HIMTI UNESA mengadakan pelatihan digital marketing yang diikuti oleh mahasiswa dari berbagai jurusan. Pelatihan yang berlangsung selama 2 hari ini mengajarkan dasar-dasar digital marketing, termasuk SEO, social media marketing, content creation, dan analitik digital.<br><br>Pelatihan ini dipandu oleh praktisi digital marketing yang sudah berpengalaman di industri. Peserta tidak hanya belajar teori tetapi juga praktik langsung dalam membuat kampanye pemasaran digital untuk produk atau jasa fiktif.<br><br>\"Di era digital ini, keterampilan digital marketing sangat penting tidak hanya untuk mereka yang akan berkarir di bidang marketing, tetapi juga bagi entrepreneur dan profesional di berbagai bidang,\" kata Siska Aprilia, Ketua Divisi Pengembangan SDM HIMTI UNESA.<br><br>Pelatihan ini mendapat respon positif dari para peserta, dan HIMTI UNESA berencana untuk mengadakan pelatihan lanjutan dengan materi yang lebih mendalam di semester mendatang."
+    }
+  ],
+  "newsStats": [
+    { "id": 1, "number": "120+", "label": "Artikel Dipublikasikan" },
+    { "id": 2, "number": "7", "label": "Kategori Artikel" },
+    { "id": 3, "number": "25+", "label": "Kontributor Artikel" }
+  ],
+  "recentPosts": [
+    {
+      "id": 1,
+      "title": "HIMTI Open Recruitment 2023",
+      "date": "8 April 2023",
+      "imageUrl": "https://picsum.photos/id/11/100/100"
+    },
+    {
+      "id": 2,
+      "title": "Kunjungan Industri ke Startup Lokal",
+      "date": "5 April 2023",
+      "imageUrl": "https://picsum.photos/id/22/100/100"
+    },
+    {
+      "id": 3,
+      "title": "Pelatihan Cloud Computing AWS",
+      "date": "1 April 2023",
+      "imageUrl": "https://picsum.photos/id/26/100/100"
+    }
+  ],
+  "tags": [
+    "Web Development",
+    "Mobile App",
+    "UI/UX",
+    "Programming",
+    "Cloud",
+    "IoT",
+    "AI",
+    "Blockchain",
+    "Data Science",
+    "Cybersecurity"
+  ]
+}

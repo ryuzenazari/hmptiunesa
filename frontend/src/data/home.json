@@ -1,0 +1,403 @@
+{
+  "latestEvents": [
+    {
+      "id": 1,
+      "date": "15/05",
+      "title": "Workshop UI/UX Design",
+      "description": "Belajar desain antarmuka pengguna modern dengan ahli UX dari industri teknologi",
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "slug": "workshop-uiux-design"
+    },
+    {
+      "id": 2,
+      "date": "20/05",
+      "title": "Seminar Teknologi AI",
+      "description": "Pembahasan trend teknologi AI terkini dan implementasinya di dunia nyata",
+      "image": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "slug": "seminar-teknologi-ai"
+    },
+    {
+      "id": 3,
+      "date": "25/05",
+      "title": "Bootcamp Web Development",
+      "description": "Pelatihan intensif pengembangan web modern menggunakan React dan Node.js",
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80",
+      "slug": "bootcamp-web-development"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "date": "10/05/2025",
+      "title": "Pendaftaran Keanggotaan Baru Dibuka",
+      "tag": "Penting",
+      "slug": "pendaftaran-keanggotaan-baru"
+    },
+    {
+      "id": 2,
+      "date": "08/05/2025",
+      "title": "Jadwal Pemilihan Ketua Himpunan 2025",
+      "tag": "Info",
+      "slug": "jadwal-pemilihan-ketua-2025"
+    },
+    {
+      "id": 3,
+      "date": "05/05/2025",
+      "title": "Info Beasiswa untuk Mahasiswa TI",
+      "tag": "Beasiswa",
+      "slug": "info-beasiswa-mahasiswa-ti"
+    }
+  ],
+  "collaborations": [
+    {
+      "id": 1,
+      "name": "King Mokut's University of Technology North Bangkok, Thailand",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/e/e5/Logo_KMUTNB.svg",
+      "type": "akademik",
+      "bidang": "Program Pendidikan, Magang Mahasiswa",
+      "website": "https://www.kmutnb.ac.th/"
+    },
+    {
+      "id": 2,
+      "name": "Okayama University",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Okayama_University.svg",
+      "type": "akademik",
+      "bidang": "Guest Lecture, Penelitian Kolaborasi dengan Dosen",
+      "website": "https://www.okayama-u.ac.jp/eng/"
+    },
+    {
+      "id": 3,
+      "name": "Kumamoto University",
+      "logo": "https://www.kumamoto-u.ac.jp/content/images/common/logo.svg",
+      "type": "akademik",
+      "bidang": "Guest Lecture, Konferensi Internasional",
+      "website": "https://ewww.kumamoto-u.ac.jp/en/"
+    },
+    {
+      "id": 4,
+      "name": "Indonesian Student Association in the Philippines",
+      "logo": "https://via.placeholder.com/250x100?text=ISA+Philippines",
+      "type": "akademik",
+      "bidang": "Program Pengabdian kepada Masyarakat Internasional",
+      "website": "https://example.com/isa-philippines"
+    },
+    {
+      "id": 5,
+      "name": "National Dong Hwa University, Taiwan",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/d/df/National_Dong_Hwa_University_logo.png",
+      "type": "akademik",
+      "bidang": "Guest Lecture, Konferensi Internasional",
+      "website": "https://www.ndhu.edu.tw/?Lang=en"
+    },
+    {
+      "id": 6,
+      "name": "Tohoku University, Japan",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Tohoku_University_Logo.svg",
+      "type": "akademik",
+      "bidang": "Konferensi Internasional",
+      "website": "https://www.tohoku.ac.jp/en/"
+    },
+    {
+      "id": 7,
+      "name": "National Taiwan Normal University (NTNU), Taiwan",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/7/7b/National_Taiwan_Normal_University_logo.svg",
+      "type": "akademik",
+      "bidang": "Konferensi Internasional",
+      "website": "https://en.ntnu.edu.tw/"
+    },
+    {
+      "id": 8,
+      "name": "Mohammed V University, Morocco",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/4/4b/Mohammed_V_University.png",
+      "type": "akademik",
+      "bidang": "Konferensi Internasional",
+      "website": "http://www.um5.ac.ma/um5r/"
+    },
+    {
+      "id": 9,
+      "name": "School administration of the city of Dortmund",
+      "logo": "https://via.placeholder.com/250x100?text=Dortmund",
+      "type": "akademik",
+      "bidang": "Konferensi Internasional",
+      "website": "https://www.dortmund.de/"
+    },
+    {
+      "id": 10,
+      "name": "Instituto Federal de Educação Ciência e Tecnologia do Ceará",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Instituto_Federal_do_Cear%C3%A1_-_Marca_Vertical_2015.svg/800px-Instituto_Federal_do_Cear%C3%A1_-_Marca_Vertical_2015.svg.png",
+      "type": "akademik",
+      "bidang": "Konferensi Internasional",
+      "website": "https://ifce.edu.br/"
+    },
+    {
+      "id": 11,
+      "name": "Birmingham City University",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/1/14/Birmingham_City_University_logo.svg",
+      "type": "akademik",
+      "bidang": "Konferensi Internasional",
+      "website": "https://www.bcu.ac.uk/"
+    },
+    {
+      "id": 12,
+      "name": "Jadavpur University, Kolkata, India",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/3/31/Jadavpur_University_Logo.svg",
+      "type": "akademik",
+      "website": "http://www.jaduniv.edu.in/"
+    },
+    {
+      "id": 13,
+      "name": "Polytechnic of Porto Rua Dr. António Bernardino de Almeida, Portugal",
+      "logo": "https://via.placeholder.com/250x100?text=Polytechnic+of+Porto",
+      "type": "akademik",
+      "bidang": "Konferensi Internasional",
+      "website": "https://www.ipp.pt/index.php/en/"
+    },
+    {
+      "id": 14,
+      "name": "National Yunlin University of Science and Technology, Taiwan",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/a/a0/NYUST.jpg",
+      "type": "akademik",
+      "website": "https://www.yuntech.edu.tw/index.php/en/"
+    },
+    {
+      "id": 15,
+      "name": "Universiti Tun Hussein Onn Malaysia (UTHM)",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/b/b1/Universiti_Tun_Hussein_Onn_Malaysia_logo.png",
+      "type": "akademik",
+      "website": "https://www.uthm.edu.my/en/"
+    },
+    {
+      "id": 16,
+      "name": "Ho Chi Minh City University of Technology (HCMUT), Vietnam",
+      "logo": "https://upload.wikimedia.org/wikipedia/vi/d/de/Logo_HCMUT.svg",
+      "type": "akademik",
+      "website": "https://hcmut.edu.vn/en"
+    },
+    {
+      "id": 17,
+      "name": "Curtin University",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/3/38/Curtin_University_Logo.svg",
+      "type": "akademik",
+      "website": "https://www.curtin.edu.au/"
+    },
+    {
+      "id": 18,
+      "name": "University Sains Malaysia",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/6/6c/Logo_Universiti_Sains_Malaysia.svg",
+      "type": "akademik",
+      "website": "https://www.usm.my/"
+    }
+  ],
+  "galleryImages": [
+    {
+      "id": 1,
+      "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Workshop Pemrograman Web",
+      "album": {
+        "id": 101,
+        "title": "Workshop Pemrograman Web 2024",
+        "description": "Dokumentasi kegiatan workshop pemrograman web yang diadakan pada tanggal 15 April 2024",
+        "photos": [
+          {
+            "url": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Sesi presentasi utama workshop"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+            "caption": "Peserta workshop sedang mengikuti sesi praktik"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Diskusi kelompok antar peserta workshop"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Sesi tanya jawab dengan pembicara"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Foto bersama seluruh peserta dan panitia"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "url": "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1047&q=80",
+      "title": "Seminar Teknologi AI",
+      "album": {
+        "id": 102,
+        "title": "Seminar Teknologi AI 2024",
+        "description": "Dokumentasi kegiatan seminar teknologi AI yang diadakan pada tanggal 20 Mei 2024",
+        "photos": [
+          {
+            "url": "https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1047&q=80",
+            "caption": "Pembukaan seminar teknologi AI"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+            "caption": "Presentasi oleh pembicara utama"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Demonstrasi teknologi AI terbaru"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Panel diskusi dengan para ahli AI"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "Bootcamp Mobile Development",
+      "album": {
+        "id": 103,
+        "title": "Bootcamp Mobile Development 2024",
+        "description": "Dokumentasi kegiatan bootcamp pengembangan aplikasi mobile yang berlangsung selama 3 hari",
+        "photos": [
+          {
+            "url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Hari pertama bootcamp - pengenalan"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+            "caption": "Sesi pemrograman intensif"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Presentasi project oleh peserta"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1528901166007-3784c7dd3653?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Sesi mentoring langsung oleh praktisi"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "title": "IT Competition Day",
+      "album": {
+        "id": 104,
+        "title": "IT Competition Day 2024",
+        "description": "Rangkaian kompetisi IT yang diselenggarakan HMP TI UNESA untuk mahasiswa se-Indonesia",
+        "photos": [
+          {
+            "url": "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Pembukaan IT Competition Day"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1618607685213-e5b50c5090e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Kompetisi pemrograman"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+            "caption": "Kompetisi desain UI/UX"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1567038257549-64245b9ccafd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+            "caption": "Pengumuman pemenang kompetisi"
+          }
+        ]
+      }
+    }
+  ],
+  "stats": [
+    { "id": 1, "number": "900+", "label": "Anggota Aktif" },
+    { "id": 2, "number": "30+", "label": "Kegiatan Tahunan" }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Budi Santoso",
+      "role": "Alumni 2020",
+      "content": "Berkat pelatihan dan kegiatan di HMP TI, saya mendapatkan keterampilan yang sangat berharga untuk karir saya di bidang teknologi.",
+      "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+      "id": 2,
+      "name": "Dewi Lestari",
+      "role": "Mahasiswa Semester 6",
+      "content": "Pengalaman organisasi di HMP TI membuka banyak kesempatan networking dan kolaborasi dengan industri teknologi.",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Adi Nugroho",
+      "role": "Koordinator Divisi Programming",
+      "content": "Komunitas yang luar biasa untuk belajar dan berkembang bersama. Semua anggota saling mendukung untuk mencapai potensi terbaik.",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    }
+  ],
+  "featuredProjects": [
+    {
+      "id": 1,
+      "title": "Aplikasi Pemantau Kualitas Air",
+      "description": "Aplikasi IoT untuk memantau kualitas air di lingkungan kampus menggunakan sensor dan analisis data.",
+      "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "tags": ["IoT", "Mobile App", "Data Analysis"],
+      "slug": "aplikasi-pemantau-kualitas-air"
+    },
+    {
+      "id": 2,
+      "title": "Platform Belajar Coding untuk Anak",
+      "description": "Platform interaktif untuk memperkenalkan konsep pemrograman pada anak-anak sekolah dasar dan menengah.",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      "tags": ["Education", "Web App", "Frontend"],
+      "slug": "platform-belajar-coding-anak"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "Pengembangan Web",
+      "icon": "💻",
+      "description": "Pembelajaran dan praktek pengembangan aplikasi web modern dengan teknologi terkini."
+    },
+    {
+      "id": 2,
+      "name": "Mobile Development",
+      "icon": "📱",
+      "description": "Pengembangan aplikasi mobile untuk platform Android dan iOS."
+    },
+    {
+      "id": 3,
+      "name": "Data Science",
+      "icon": "📊",
+      "description": "Penerapan analisis data dan machine learning untuk menyelesaikan masalah."
+    },
+    {
+      "id": 4,
+      "name": "UI/UX Design",
+      "icon": "🎨",
+      "description": "Prinsip dan praktek desain antarmuka dan pengalaman pengguna."
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "name": "PT. Ozami Inti Sinergi",
+      "logo": "https://bucket.sdmdigital.id/dts-simonas/perusahaan-logo/411f286f-923e-410f-8449-8869d14f3581.png",
+      "type": "industri",
+      "website": "https://ozami.co.id/"
+    },
+    {
+      "id": 2,
+      "name": "PT. Revolusi Cita Edukasi",
+      "logo": "https://www.revou.co/static/images/logo.png",
+      "type": "akademik",
+      "website": "https://www.revou.co/"
+    },
+    {
+      "id": 3,
+      "name": "PT. Dicoding Akademi Indonesia",
+      "logo": "https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/commons/dicoding-logo-full.png",
+      "type": "akademik",
+      "website": "https://www.dicoding.com/"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "categories": [
+    { "id": "all", "name": "Semua", "icon": "🗓️" },
+    { "id": "webinar", "name": "Webinar", "icon": "🌐" },
+    { "id": "workshop", "name": "Workshop", "icon": "💻" },
+    { "id": "competition", "name": "Kompetisi", "icon": "🏆" },
+    { "id": "internal", "name": "Internal", "icon": "👥" },
+    { "id": "training", "name": "Latihan/Pelatihan", "icon": "🏋️" }
+  ],
+  "eventItems": [
+    {
+      "id": 1,
+      "title": "LKMM TD (Latihan Kepemimpinan Manajemen Mahasiswa Tingkat Dasar)",
+      "category": "training",
+      "description": "Pelatihan kepemimpinan dasar untuk mahasiswa baru yang bertujuan untuk mengembangkan kemampuan leadership, manajemen, dan organisasi.",
+      "location": "Gedung A10, Auditorium, Teknik Informatika, Unesa",
+      "time": "07:00 - Selesai WIB",
+      "date": {
+        "day": "31",
+        "month": "Mei",
+        "year": "2025"
+      },
+      "imageUrl": "/kegiatan/lkmmtd/poster.jpg",
+      "slots": {
+        "registered": 30,
+        "total": 60
+      },
+      "speaker": "Tim Instruktur LKMM UNESA",
+      "level": "Pemula",
+      "htm": "Rp 70.000 (Internal) / Rp 75.000 (Eksternal)",
+      "htm_note": "*Internal: Prodi TI, SI, PTI, dan MI",
+      "formUrl": "https://linktr.ee/lkmmtd.if",
+      "contacts": [
+        {
+          "name": "Mirsa",
+          "phone": "+62 852-3405-5380"
+        },
+        {
+          "name": "Nency",
+          "phone": "+62 818-0383-5440"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Workshop UI/UX Design",
+      "category": "workshop",
+      "description": "Workshop ini akan membahas dasar-dasar desain UI/UX dan praktik terbaik dalam merancang antarmuka pengguna yang intuitif.",
+      "location": "Lab Komputer 3, Jurusan Teknik Informatika, Unesa",
+      "time": "09:00 - 15:00 WIB",
+      "date": {
+        "day": "15",
+        "month": "Jun",
+        "year": "2025"
+      },
+      "imageUrl": "@/assets/kegiatan/workshop/uiux.jpg",
+      "slots": {
+        "registered": 25,
+        "total": 40
+      },
+      "speaker": "Budi Santoso, UX Designer di Tokopedia",
+      "level": "Pemula",
+      "htm": "Rp 50.000 (Internal) / Rp 65.000 (Eksternal)",
+      "htm_note": "*Internal: Prodi TI, SI, PTI, dan MI",
+      "formUrl": "https://forms.gle/workshop-uiux",
+      "contacts": [
+        {
+          "name": "Dimas",
+          "phone": "+62 812-3456-7890"
+        }
+      ]
+    }
+  ],
+  "eventStats": [
+    { "id": 1, "number": "1", "label": "Kegiatan Mendatang" },
+    { "id": 2, "number": "45+", "label": "Kegiatan Terselenggara" },
+    { "id": 3, "number": "1000+", "label": "Peserta Terdaftar" }
+  ]
+}

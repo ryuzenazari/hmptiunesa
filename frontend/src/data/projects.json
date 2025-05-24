@@ -1,0 +1,134 @@
+{
+  "categories": ["All", "Web App", "Mobile App", "IoT", "AI"],
+  "projectItems": [
+    {
+      "id": 1,
+      "title": "Aplikasi Pemantau Kualitas Air",
+      "description": "Aplikasi IoT untuk memantau kualitas air di lingkungan kampus menggunakan sensor dan analisis data. Sistem ini menggabungkan perangkat keras IoT dengan platform berbasis cloud untuk menyediakan pemantauan real-time dan analitik untuk pengelolaan sumber daya air.",
+      "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "detailImage": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "category": "IoT",
+      "tags": ["IoT", "Mobile App", "Data Analysis", "Arduino"],
+      "year": "2023",
+      "team": ["Budi Santoso", "Dewi Lestari", "Ahmad Fauzi"],
+      "link": "https://water-monitor.example.com",
+      "github": "https://github.com/hmptiunesa/water-quality-monitor",
+      "benefits": [
+        "Pemantauan kualitas air real-time",
+        "Dashboard analitik komprehensif",
+        "Notifikasi otomatis saat parameter di luar batas aman",
+        "Hemat biaya operasional"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Platform Belajar Coding untuk Anak",
+      "description": "Platform interaktif untuk memperkenalkan konsep pemrograman pada anak-anak sekolah dasar dan menengah. Aplikasi web ini dirancang dengan antarmuka yang ramah anak dan menyediakan modul pembelajaran yang seru untuk mengajarkan konsep dasar pemrograman melalui permainan dan tantangan.",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      "detailImage": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80",
+      "category": "Web App",
+      "tags": ["Education", "Web App", "Frontend", "JavaScript"],
+      "year": "2022",
+      "team": ["Rina Wijaya", "Dimas Pratama", "Linda Kusuma"],
+      "link": "https://kids-coding.example.com",
+      "github": "https://github.com/hmptiunesa/kids-coding-platform",
+      "benefits": [
+        "Antarmuka ramah anak dan interaktif",
+        "Modul pembelajaran yang menyenangkan",
+        "Pembelajaran berbasis permainan",
+        "Laporan kemajuan belajar"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Sistem Manajemen Inventaris Laboratorium",
+      "description": "Sistem berbasis web untuk mengelola inventaris peralatan laboratorium informatika. Aplikasi ini membantu staf laboratorium melacak peralatan, mengelola peminjaman, dan memantau kondisi inventaris dengan antarmuka yang intuitif dan sistem pelaporan komprehensif.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": "Web App",
+      "tags": ["Web App", "Inventory", "Database", "PHP"],
+      "year": "2022",
+      "team": ["Rudi Hartono", "Siti Aminah", "Joko Widodo"],
+      "link": "https://lab-inventory.hmptiunesa.ac.id",
+      "github": "https://github.com/hmptiunesa/lab-inventory-system",
+      "benefits": [
+        "Pelacakan aset secara real-time",
+        "Manajemen peminjaman yang efisien",
+        "Pelaporan dan analitik inventaris",
+        "Riwayat pemeliharaan terintegrasi"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Aplikasi Carpooling Kampus",
+      "description": "Solusi carpooling untuk mahasiswa dan staf UNESA yang memudahkan berbagi tumpangan ke kampus. Aplikasi mobile ini menghubungkan pengemudi dan penumpang dengan rute dan jadwal yang serupa, membantu mengurangi kemacetan dan jejak karbon kampus.",
+      "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": "Mobile App",
+      "tags": ["Mobile App", "Transportation", "React Native", "Firebase"],
+      "year": "2023",
+      "team": ["Ratna Puspita", "Bayu Setiawan", "Nadia Putri"],
+      "link": "https://play.google.com/store/apps/details?id=id.ac.unesa.carpooling",
+      "github": "https://github.com/hmptiunesa/unesa-carpooling",
+      "benefits": [
+        "Pengurangan kemacetan kampus",
+        "Penghematan biaya transportasi",
+        "Pengurangan jejak karbon",
+        "Sistem pembayaran yang aman"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Asisten Virtual untuk Mahasiswa Baru",
+      "description": "Chatbot berbasis AI untuk membantu mahasiswa baru beradaptasi dengan kehidupan kampus. Asisten virtual ini menjawab pertanyaan umum tentang akademik, fasilitas kampus, dan kegiatan mahasiswa, memberikan panduan yang mudah diakses bagi mahasiswa baru UNESA.",
+      "image": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=806&q=80",
+      "category": "AI",
+      "tags": ["AI", "Chatbot", "NLP", "Python"],
+      "year": "2023",
+      "team": ["Maya Indah", "Arif Rahman", "Putri Anggita"],
+      "link": "https://unesabot.hmptiunesa.ac.id",
+      "github": "https://github.com/hmptiunesa/unesa-virtual-assistant",
+      "benefits": [
+        "Dukungan 24/7 untuk mahasiswa baru",
+        "Jawaban cepat untuk pertanyaan umum",
+        "Panduan navigasi kampus",
+        "Informasi terkini tentang kegiatan kampus"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Sistem Manajemen Event Kampus",
+      "description": "Platform untuk mengelola dan mempromosikan acara di lingkungan UNESA. Sistem ini mencakup fitur pendaftaran online, manajemen tiket, dan analitik pasca-acara, memudahkan organisasi mahasiswa untuk mengelola event mereka secara efisien.",
+      "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": "Web App",
+      "tags": ["Event Management", "Web App", "Laravel", "MySQL"],
+      "year": "2022",
+      "team": ["Irfan Hakim", "Dian Sastro", "Agus Harianto"],
+      "link": "https://events.hmptiunesa.ac.id",
+      "github": "https://github.com/hmptiunesa/event-management-system",
+      "benefits": [
+        "Pengelolaan event yang efisien",
+        "Pendaftaran dan tiket online",
+        "Analitik pasca-acara",
+        "Promosi terintegrasi"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Aplikasi Pengenalan Wajah untuk Presensi Kuliah",
+      "description": "Sistem otomatis berbasis AI untuk mengelola kehadiran mahasiswa dalam perkuliahan menggunakan teknologi pengenalan wajah. Aplikasi ini menggabungkan kamera keamanan dengan algoritma deep learning untuk mengidentifikasi mahasiswa dan mencatat kehadiran mereka secara akurat dan efisien.",
+      "image": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "detailImage": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "category": "AI",
+      "tags": ["AI", "Computer Vision", "Face Recognition", "Python", "TensorFlow"],
+      "year": "2023",
+      "team": ["Hendri Wijaya", "Anisa Rahmawati", "Faisal Akbar"],
+      "link": "https://face-attendance.hmptiunesa.ac.id",
+      "github": "https://github.com/hmptiunesa/face-recognition-attendance",
+      "benefits": [
+        "Pencatatan kehadiran otomatis",
+        "Pengurangan kecurangan presensi",
+        "Dashboard laporan kehadiran real-time",
+        "Integrasi dengan sistem akademik kampus"
+      ]
+    }
+  ]
+}
