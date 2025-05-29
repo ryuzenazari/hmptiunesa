@@ -354,27 +354,57 @@
   "skills": [
     {
       "id": 1,
-      "name": "Pengembangan Web",
+      "name": "Rekayasa Perangkat Lunak",
       "icon": "💻",
-      "description": "Pembelajaran dan praktek pengembangan aplikasi web modern dengan teknologi terkini."
+      "description": "Pengembangan dan pemeliharaan sistem perangkat lunak dengan standar kualitas tinggi."
     },
     {
       "id": 2,
-      "name": "Mobile Development",
-      "icon": "📱",
-      "description": "Pengembangan aplikasi mobile untuk platform Android dan iOS."
+      "name": "Sistem Cerdas & Robotika",
+      "icon": "🤖",
+      "description": "Pengembangan sistem otomatis dan robotika dengan implementasi kecerdasan buatan."
     },
     {
       "id": 3,
-      "name": "Data Science",
-      "icon": "📊",
-      "description": "Penerapan analisis data dan machine learning untuk menyelesaikan masalah."
+      "name": "Bioinformatics & Healthcare Technology",
+      "icon": "🧬",
+      "description": "Aplikasi teknologi informasi untuk analisis data biologi dan solusi kesehatan."
     },
     {
       "id": 4,
-      "name": "UI/UX Design",
-      "icon": "🎨",
-      "description": "Prinsip dan praktek desain antarmuka dan pengalaman pengguna."
+      "name": "Pengolahan Citra & Multimedia",
+      "icon": "🖼️",
+      "description": "Teknologi dan metode untuk pengolahan, analisis, dan manipulasi konten visual dan multimedia."
+    },
+    {
+      "id": 5,
+      "name": "Blockchain & Teknologi Keuangan",
+      "icon": "💰",
+      "description": "Pengembangan aplikasi blockchain dan solusi teknologi untuk industri finansial."
+    },
+    {
+      "id": 6,
+      "name": "Kecerdasan Buatan",
+      "icon": "🧠",
+      "description": "Pengembangan sistem dan algoritma yang mampu meniru fungsi kognitif manusia."
+    },
+    {
+      "id": 7,
+      "name": "Jaringan Komputer & Komputasi Terdistribusi",
+      "icon": "🌐",
+      "description": "Desain, implementasi, dan manajemen jaringan komputer dan sistem terdistribusi."
+    },
+    {
+      "id": 8,
+      "name": "Keamanan Siber",
+      "icon": "🔒",
+      "description": "Pengamanan sistem informasi, jaringan, dan data dari ancaman dan serangan siber."
+    },
+    {
+      "id": 9,
+      "name": "Game Development & Interactive System",
+      "icon": "🎮",
+      "description": "Pengembangan permainan video dan sistem interaktif dengan pengalaman pengguna yang menarik."
     }
   ],
   "partners": [

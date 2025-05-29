@@ -154,11 +154,10 @@ onMounted(() => {
 <template>
   <div class="news-page">
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h1 class="hero-title">Berita & Artikel</h1>
-        <p class="hero-subtitle">
+    <section class="news-hero">
+      <div class="news-hero-content">
+        <h1>Berita & Artikel</h1>
+        <p>
           Informasi terbaru seputar kegiatan dan perkembangan Himpunan Mahasiswa Prodi Teknik
           Informatika UNESA
         </p>
@@ -408,51 +407,44 @@ onMounted(() => {
 }
 
 /* ---------- Hero Section ---------- */
-.hero {
+.news-hero {
   background: linear-gradient(135deg, #002e54, #004680, #001830);
   color: white;
-  padding: 5rem 2rem;
+  padding: 3.5rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: 50vh;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.hero-overlay {
+.news-hero::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0MCcgaGVpZ2h0PSc0MCcgdmlld0JveD0nMCAwIDQwIDQwJz48cGF0aCBkPSdNMTkuOTk1IDBDOC43MSAwIDAgOC43MSAwIDE5Ljk5NVMzMy42NiA0MCAxOS45OTUgNDBTNDAgOC43MSA0MCAxOS45OTUgMjQuNTcgMCAxOS45OTUgMHptLjAwNSAyQTM1IDM1IDAgMCAxIDM4IDE5Ljk5IDE4IDE4IDAgMSAxIDIgMTkuOTkgMzUgMzUgMCAwIDEgMjAgMnonIGZpbGw9JyNmZmYnIGZpbGwtb3BhY2l0eT0nMC4wMycgZmlsbC1ydWxlPSdldmVub2RkJy8+PC9zdmc+');
+  background-size: 100px 100px;
   opacity: 0.15;
   z-index: 1;
 }
 
-.hero-content {
+.news-hero-content {
   position: relative;
-  max-width: 800px;
-  text-align: center;
-  color: white;
   z-index: 2;
-  padding: 0 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.hero-title {
+.news-hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  line-height: 1.3;
   position: relative;
   display: inline-block;
 }
 
-.hero-title::after {
+.news-hero h1::after {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -464,7 +456,7 @@ onMounted(() => {
   border-radius: 2px;
 }
 
-.hero-subtitle {
+.news-hero p {
   font-size: 1.25rem;
   max-width: 600px;
   margin: 0 auto;
@@ -1196,11 +1188,11 @@ onMounted(() => {
 }
 
 @media (max-width: 768px) {
-  .hero-title {
+  .news-hero h1 {
     font-size: 2.5rem;
   }
 
-  .hero-subtitle {
+  .news-hero p {
     font-size: 1.1rem;
   }
 
@@ -1231,15 +1223,15 @@ onMounted(() => {
 }
 
 @media (max-width: 480px) {
-  .hero {
+  .news-hero {
     min-height: 350px;
   }
 
-  .hero-title {
+  .news-hero h1 {
     font-size: 2rem;
   }
 
-  .hero-subtitle {
+  .news-hero p {
     font-size: 1.1rem;
   }
 

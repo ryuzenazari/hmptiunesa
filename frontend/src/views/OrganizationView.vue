@@ -1165,8 +1165,12 @@ onMounted(() => {
   }
 
   .secretary-treasurer {
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-direction: row;
+  }
+
+  .secretary-treasurer .org-card {
+    margin: 0.5rem;
+    width: 180px;
   }
 
   .departments {
@@ -1201,6 +1205,29 @@ onMounted(() => {
 /* Style secretary-treasurer level */
 .secretary-treasurer {
   gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.secretary-treasurer .org-card {
+  margin: 0.75rem;
+  width: 200px;
+  height: auto;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.secretary-treasurer .org-photo {
+  width: 110px;
+  height: 110px;
 }
 
 /* Tweaks untuk mobile */

@@ -32,14 +32,6 @@ interface Partner {
   website?: string // Menambahkan website sebagai opsional
 }
 
-interface Testimonial {
-  id: number
-  name: string
-  role: string
-  content: string
-  image: string
-}
-
 interface Project {
   id: number
   title: string
@@ -62,7 +54,6 @@ const announcements = ref<Announcement[]>(homeData.announcements)
 const collaborations = ref<Partner[]>(homeData.collaborations)
 const galleryImages = ref(homeData.galleryImages)
 const stats = ref(homeData.stats)
-const testimonials = ref<Testimonial[]>(homeData.testimonials)
 const featuredProjects = ref<Project[]>(homeData.featuredProjects)
 const skills = ref<Skill[]>(homeData.skills)
 const partners = ref<Partner[]>(homeData.partners)
@@ -614,40 +605,36 @@ const navigateToPartner = (website?: string) => {
             <h2 class="section-title">Kami</h2>
             <div class="section-line"></div>
           </div>
-          <div class="about-content">
-            <div class="about-text about-card featured-card">
-              <div class="card-icon">🚀</div>
-              <h3>Tentang Kami</h3>
-              <p>
-                Himpunan Mahasiswa Prodi Teknik Informatika Universitas Negeri Surabaya adalah
-                organisasi yang berfokus pada pengembangan softskill dan hardskill mahasiswa di
-                bidang teknologi informasi.
-              </p>
-              <router-link to="/profil" class="btn-outline">Pelajari Selengkapnya</router-link>
+          <div class="about-wrapper">
+            <div class="about-main">
+              <div class="about-text about-card featured-card">
+                <div class="card-icon">🚀</div>
+                <h3>Tentang Kami</h3>
+                <p>
+                  Himpunan Mahasiswa Prodi Teknik Informatika Universitas Negeri Surabaya adalah
+                  organisasi yang berfokus pada pengembangan softskill dan hardskill mahasiswa di
+                  bidang teknologi informasi.
+                </p>
+                <router-link to="/profil" class="btn-outline">Pelajari Selengkapnya</router-link>
+              </div>
             </div>
-            <div class="about-card">
-              <div class="card-icon">💡</div>
-              <h3>Visi Kami</h3>
-              <p>
-                Menjadi wadah pengembangan mahasiswa Teknik Informatika yang unggul dan berdaya
-                saing global.
-              </p>
-            </div>
-            <div class="about-card">
-              <div class="card-icon">🎯</div>
-              <h3>Misi Kami</h3>
-              <p>
-                Menciptakan lingkungan belajar yang inovatif dan kolaboratif untuk mengasah
-                kemampuan teknis dan kepemimpinan mahasiswa.
-              </p>
-            </div>
-            <div class="about-card">
-              <div class="card-icon">🌟</div>
-              <h3>Nilai Kami</h3>
-              <p>
-                Kami menjunjung tinggi nilai integritas, kolaborasi, inovasi, dan keunggulan dalam
-                setiap kegiatan yang kami laksanakan.
-              </p>
+            <div class="about-content">
+              <div class="about-card">
+                <div class="card-icon">💡</div>
+                <h3>Visi Kami</h3>
+                <p>
+                  Menjadi wadah pengembangan mahasiswa Teknik Informatika yang unggul dan berdaya
+                  saing global.
+                </p>
+              </div>
+              <div class="about-card">
+                <div class="card-icon">🎯</div>
+                <h3>Misi Kami</h3>
+                <p>
+                  Menciptakan lingkungan belajar yang inovatif dan kolaboratif untuk mengasah
+                  kemampuan teknis dan kepemimpinan mahasiswa.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -716,31 +703,6 @@ const navigateToPartner = (website?: string) => {
           </div>
           <div class="section-footer">
             <router-link to="/projects" class="btn-primary">Lihat Semua Proyek</router-link>
-          </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials-section animate-on-scroll">
-          <div class="section-header">
-            <h2 class="section-title">Testimoni</h2>
-            <div class="section-line"></div>
-          </div>
-          <div class="testimonials-container">
-            <div v-for="testimonial in testimonials" :key="testimonial.id" class="testimonial-card">
-              <div class="testimonial-content">
-                <p>{{ testimonial.content }}</p>
-              </div>
-              <div class="testimonial-author">
-                <div
-                  class="testimonial-avatar"
-                  :style="{ backgroundImage: `url('${testimonial.image}')` }"
-                ></div>
-                <div class="testimonial-info">
-                  <h4>{{ testimonial.name }}</h4>
-                  <span>{{ testimonial.role }}</span>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -943,14 +905,15 @@ const navigateToPartner = (website?: string) => {
 /* ---------- Hero Section ---------- */
 .hero {
   position: relative;
-  height: 100vh;
   min-height: 600px;
+  height: 100vh;
+  max-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0;
   background: linear-gradient(135deg, #002e54, #004680, #001830);
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 5rem;
 }
 
@@ -983,7 +946,7 @@ const navigateToPartner = (website?: string) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem 0 5rem;
+  padding: 0 2rem;
   height: 100%;
   position: relative;
   z-index: 3;
@@ -1120,7 +1083,7 @@ const navigateToPartner = (website?: string) => {
   top: -9.4rem;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 4;
 }
 
 .stats-container {
@@ -1204,20 +1167,37 @@ const navigateToPartner = (website?: string) => {
 .about-section {
   margin-bottom: 6rem;
   padding-top: 0;
+  width: 100%;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-main {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .about-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  align-items: stretch;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .about-text.about-card {
-  flex: 1 1 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   background: linear-gradient(135deg, #004680, #0072b1);
   color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  min-height: 240px;
+  padding: 2.5rem;
 }
 
 .about-text.about-card h3,
@@ -1228,6 +1208,7 @@ const navigateToPartner = (website?: string) => {
 .about-text.about-card .btn-outline {
   color: white;
   border-color: white;
+  align-self: flex-start;
 }
 
 .about-text.about-card .btn-outline:hover {
@@ -1242,6 +1223,7 @@ const navigateToPartner = (website?: string) => {
 .featured-card {
   position: relative;
   overflow: hidden;
+  border-radius: 1.5rem;
 }
 
 .featured-card::after {
@@ -1256,29 +1238,46 @@ const navigateToPartner = (website?: string) => {
   z-index: 1;
 }
 
+.featured-card::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent);
+  border-radius: 50%;
+  bottom: -70px;
+  left: -70px;
+  z-index: 1;
+}
+
 .about-text p {
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-secondary);
   margin-bottom: 2rem;
+  max-width: 800px;
 }
 
 .about-card {
-  flex: 1 1 300px;
   background: white;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  height: 100%;
+  justify-content: flex-start;
+  text-align: center;
 }
 
 .about-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 25px 30px -8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 25px -8px rgba(0, 0, 0, 0.15);
 }
 
 .about-text.about-card:hover {
@@ -1296,20 +1295,166 @@ const navigateToPartner = (website?: string) => {
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
 
+.about-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  margin-top: 0.5rem;
+  flex-grow: 1;
+}
+
 .card-icon {
   font-size: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 .about-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  position: relative;
+  z-index: 2;
 }
 
-.about-card p {
-  color: var(--text-secondary);
-  line-height: 1.7;
+/* Media queries for about section */
+@media (min-width: 768px) {
+  .about-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .about-main {
+    flex: 0 0 35%;
+    margin-bottom: 0;
+  }
+  
+  .about-content {
+    flex: 1;
+  }
+  
+  .about-text.about-card {
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+  }
+  
+  .about-card {
+    padding: 1.75rem;
+    min-height: 200px;
+  }
+  
+  .about-text.about-card {
+    padding: 2rem;
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-wrapper {
+    gap: 1.5rem;
+  }
+  
+  .about-content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  
+  .about-text.about-card {
+    padding: 1.75rem;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .about-card p {
+    font-size: 0.9rem;
+  }
+  
+  .about-card, .about-text.about-card {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-card, .about-text.about-card {
+    padding: 1.25rem;
+  }
+  
+  .card-icon {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .about-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .about-card p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .about-text.about-card .btn-outline {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .about-card, .about-text.about-card {
+    padding: 1rem;
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-card p {
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+  
+  .about-text.about-card .btn-outline {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
 }
 
 /* ---------- Skills Section ---------- */
@@ -1319,32 +1464,54 @@ const navigateToPartner = (website?: string) => {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  align-items: stretch;
+}
+
+@media (max-width: 992px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skill-card {
   background: white;
-  padding: 2rem;
+  padding: 1.75rem;
   border-radius: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+  height: 100%;
 }
 
 .skill-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
 }
 
 .skill-icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  display: inline-block;
 }
 
-.skill-card h3 {
+.skill-card h3, .about-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
   color: var(--text-primary);
 }
 
@@ -1352,25 +1519,54 @@ const navigateToPartner = (website?: string) => {
   color: var(--text-secondary);
   font-size: 0.95rem;
   line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+@media (max-width: 375px) {
+  .about-card, .skill-card {
+    padding: 1.25rem;
+    min-height: 190px;
+  }
+  
+  .card-icon, .skill-icon {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .about-card h3, .skill-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .about-card p, .skill-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 310px) {
+  .about-card, .skill-card {
+    padding: 1rem;
+    min-height: 180px;
+  }
   
   .skills-container {
     grid-template-columns: 1fr;
   }
 
   .skill-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
-  .skill-icon {
+  .skill-icon, .card-icon {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
-  .skill-card h3 {
+  .skill-card h3, .about-card h3 {
     font-size: 1.1rem;
+    margin-top: 0.35rem;
+    margin-bottom: 0.5rem;
   }
 
   .skill-card p {
@@ -1620,77 +1816,7 @@ const navigateToPartner = (website?: string) => {
   }
 }
 
-/* ---------- Testimonials Section ---------- */
-.testimonials-section {
-  margin-bottom: 6rem;
-}
 
-.testimonials-container {
-  display: flex;
-  gap: 2rem;
-  overflow-x: auto;
-  padding: 1rem 0.5rem;
-  margin: 0 -0.5rem;
-  scroll-snap-type: x mandatory;
-}
-
-.testimonial-card {
-  flex: 0 0 350px;
-  background: white;
-  border-radius: 1rem;
-  padding: 2rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-}
-
-.testimonial-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.testimonial-content p {
-  color: var(--text-secondary);
-  font-style: italic;
-  line-height: 1.7;
-  margin-bottom: 0;
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-color);
-}
-
-.testimonial-avatar {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin-right: 1rem;
-  border: 2px solid var(--primary-color);
-}
-
-.testimonial-info h4 {
-  margin: 0;
-  font-size: 1.1rem;
-  color: var(--text-primary);
-  font-weight: 700;
-}
-
-.testimonial-info span {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  display: block;
-  margin-top: 0.25rem;
-}
 
 /* ---------- Dual Section ---------- */
 .dual-section {
@@ -2119,12 +2245,16 @@ const navigateToPartner = (website?: string) => {
   .hero-container {
     flex-direction: column;
     padding: 1rem;
+    height: auto;
   }
 
   .hero-content {
     text-align: center;
-    margin-bottom: -13rem;
     max-width: 100%;
+    margin-bottom: -2rem;
+    padding: 2rem 3rem;
+    position: relative;
+    top: 50px
   }
 
   .hero-cta {
@@ -2132,23 +2262,26 @@ const navigateToPartner = (website?: string) => {
   }
 
   .hero-image {
-    margin-top: -15rem;
-    transform: scale(2.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+    transform: none;
   }
 
   .pengurus-image {
-    margin-top: -15rem;
-    width: auto;
-    max-height: 650px;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
     object-fit: contain;
-    object-position: center top;
-    transform: translateY(-40px);
+    object-position: center;
+    transform: none;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
-    padding: 4rem 0 2rem;
+    padding: 3rem 0 2rem;
     min-height: auto;
     height: auto;
     margin-bottom: 0;
@@ -2161,15 +2294,12 @@ const navigateToPartner = (website?: string) => {
   }
 
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .hero-subtitle {
     font-size: 1.15rem;
-  }
-
-  .hero-image {
-    width: 90%;
+    margin-bottom: 1.5rem;
   }
 
   .stat-item:not(:last-child)::after {
@@ -2177,23 +2307,34 @@ const navigateToPartner = (website?: string) => {
   }
 
   .stats-section {
-    position: static;
-    margin-top: -70px;
+    position: relative;
+    margin-top: 5rem;
     margin-bottom: 0;
+    z-index: 5;
   }
 
   .stats-container {
     padding: 1.5rem;
+    padding-top: 2rem;
     gap: 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #fff, #f4f7fd);
   }
 
   .about-section {
-    margin-top: -50px;
+    margin-top: -8rem;
     margin-bottom: 4rem;
   }
 
   .about-content {
     flex-direction: column;
+  }
+  
+  .about-card, .skill-card {
+    padding: 1.5rem;
+    min-height: 200px;
   }
 
   .about-section .section-header {
@@ -2201,32 +2342,62 @@ const navigateToPartner = (website?: string) => {
   }
 
   .about-section .section-title {
-    margin-top: -0.5rem;
+    margin-top: 0;
   }
 
   .hero-image {
     width: 100%;
-    max-height: 350px;
-    overflow: hidden;
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+    max-height: 370px;
+    overflow: visible;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 6;
   }
 
   .pengurus-image {
-    max-width: none;
-    width: auto;
-    height: 100%;
-    max-height: 350px;
+    width: 100%;
+    height: auto;
+    max-height: 370px;
     object-fit: contain;
-    object-position: center;
+    object-position: bottom;
+    margin-bottom: 0;
+    transform: translateY(40px);
+    position: relative;
+    z-index: 6;
   }
 }
 
 @media (max-width: 480px) {
+  .about-card, .skill-card {
+    padding: 1.5rem;
+  }
+  
+  .card-icon, .skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+}
+  
+  .about-card h3, .skill-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.5rem;
+}
+  
+  .about-card p, .skill-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
   .hero {
     padding: 2rem 0;
-    margin-bottom: -30px;
+    margin-bottom: 0;
   }
 
   .hero-container {
@@ -2235,7 +2406,7 @@ const navigateToPartner = (website?: string) => {
   }
 
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
@@ -2252,24 +2423,26 @@ const navigateToPartner = (website?: string) => {
 
   .hero-image {
     width: 100%;
+    max-width: 300px;
     max-height: 300px;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .pengurus-image {
-    width: auto;
+    width: 100%;
     max-height: 300px;
     object-fit: contain;
-    object-position: center;
+    object-position: bottom;
+    transform: translateY(15px);
   }
 
   .pengurus-overlay {
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
   }
 
   .stats-section {
-    margin-top: -20px;
+    margin-top: 1.5rem;
     position: relative;
     z-index: 15;
     margin-bottom: 0;
@@ -2293,7 +2466,7 @@ const navigateToPartner = (website?: string) => {
   }
 
   .about-section .section-title {
-    margin-top: -0.5rem;
+    margin-top: 0;
     font-size: 2rem;
   }
 
@@ -2302,7 +2475,7 @@ const navigateToPartner = (website?: string) => {
   }
 
   .about-section {
-    margin-top: -50px;
+    margin-top: 1.5rem;
     margin-bottom: 3rem;
   }
 }
@@ -2463,6 +2636,9 @@ const navigateToPartner = (website?: string) => {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
 .btn-outline::after {
@@ -2493,7 +2669,6 @@ const navigateToPartner = (website?: string) => {
 .project-card,
 .achievement-card,
 .skill-card,
-.testimonial-card,
 .announcement-card {
   transition:
     transform 0.3s ease,
@@ -2521,7 +2696,6 @@ const navigateToPartner = (website?: string) => {
 .project-card:hover,
 .achievement-card:hover,
 .skill-card:hover,
-.testimonial-card:hover,
 .announcement-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
@@ -2613,25 +2787,27 @@ const navigateToPartner = (website?: string) => {
 
 .hero-image {
   position: relative;
-  flex: 0 0 45%;
-  height: 100%;
+  flex: 0 0 40%;
+  height: auto;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
-  z-index: 2;
-  padding: 1rem;
+  justify-content: center;
+  z-index: 5;
+  padding: 0;
+  padding-top: 1rem;
   border-radius: 16px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .pengurus-image {
   height: auto;
   width: 100%;
-  max-height: 90vh;
+  max-height: 70vh;
+  max-width: 100%;
   position: relative;
   z-index: 2;
   object-fit: contain;
-  object-position: center bottom;
+  object-position: bottom;
   border-radius: 16px;
   mix-blend-mode: luminosity;
   transition: all 0.3s ease;
@@ -2658,11 +2834,12 @@ const navigateToPartner = (website?: string) => {
 /* Untuk iPhone SE dan layar sangat kecil */
 @media (max-width: 375px) {
   .hero {
-    margin-bottom: -40px;
+    margin-bottom: 0;
+    min-height: 500px;
   }
 
   .stats-section {
-    margin-top: -10px;
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -2687,22 +2864,26 @@ const navigateToPartner = (website?: string) => {
     font-size: 1.8rem;
   }
 
-  .stats-section {
-    margin-top: -10px;
-    margin-bottom: 0;
-  }
-
   .about-section {
-    margin-top: -40px;
+    margin-top: 1rem;
     margin-bottom: 2.5rem;
   }
 
   .hero-image {
-    max-height: 250px;
+    max-width: 250px;
+    max-height: 200px;
   }
 
   .pengurus-image {
-    max-height: 250px;
+    max-height: 200px;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
   }
 }
 
