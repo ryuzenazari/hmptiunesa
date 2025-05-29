@@ -1,21 +1,28 @@
 # Website Himpunan Mahasiswa
 
-Repositori ini berisi dua bagian utama:
-1. Website Himpunan - Aplikasi web full-stack untuk himpunan mahasiswa
-2. Tools Konverter Data - Kumpulan program untuk mengelola data anggota himpunan
+Repositori ini berisi aplikasi web full-stack untuk organisasi himpunan mahasiswa. Proyek ini dibagi menjadi dua bagian utama:
+- **Frontend**: Aplikasi client-side dengan Vue.js 3 dan TypeScript
+- **Backend**: API server dengan Express.js dan MongoDB
 
-## Website Himpunan
-
-Website untuk himpunan mahasiswa dengan fitur pengelolaan anggota, berita, acara, galeri, dan informasi organisasi.
-
-### Struktur Project
+## Struktur Proyek
 
 ```
 website-himpunan/
 ├── frontend/     # Aplikasi client-side dengan Vue.js
 │   ├── src/      # Source code aplikasi frontend
+│   │   ├── assets/     # Asset yang akan diproses oleh build tool
+│   │   ├── components/ # Komponen Vue yang dapat digunakan kembali
+│   │   ├── composables/# Composable functions
+│   │   ├── layouts/    # Layout komponen
+│   │   ├── router/     # Konfigurasi router
+│   │   ├── stores/     # State management dengan Pinia
+│   │   ├── services/   # Service untuk API calls
+│   │   ├── types/      # Type definitions TypeScript
+│   │   ├── utils/      # Utilitas functions
+│   │   └── views/      # Komponen halaman utama
 │   ├── public/   # Asset statis
 │   └── dist/     # Build output
+│
 ├── backend/      # API server dengan Express.js dan MongoDB
     ├── config/   # Konfigurasi aplikasi
     ├── controllers/ # Logic pengendali API
@@ -25,83 +32,26 @@ website-himpunan/
     └── seeders/  # Script seeder database
 ```
 
-### Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
-#### Frontend
-- Vue.js 3.5 dengan Composition API
-- TypeScript 5.8
-- Vite 6.2 sebagai build tool
-- Pinia 3.0 untuk state management
-- Axios 1.9 untuk HTTP requests
-- ESLint 9.22 & Prettier 3.5 untuk code quality
+### Frontend
+- Vue.js 3 dengan Composition API
+- TypeScript
+- Vite sebagai build tool
+- Pinia untuk state management
+- Axios untuk HTTP requests
+- TailwindCSS untuk styling
+- Vue Router untuk routing
 
-#### Backend
-- Node.js dengan Express.js 4.18
+### Backend
+- Node.js dengan Express.js
 - MongoDB sebagai database
-- Mongoose 8.0 ODM
-- JWT 9.0 untuk autentikasi
+- Mongoose ODM
+- JWT untuk autentikasi
 - Multer untuk upload file
-- Bcrypt 2.4 untuk enkripsi password
+- Bcrypt untuk enkripsi password
 
-### API Endpoints
-
-Backend menyediakan API untuk berbagai fitur:
-
-- `/api/users` - Manajemen pengguna dan autentikasi
-- `/api/organization` - Informasi organisasi himpunan
-- `/api/events` - Pengelolaan acara dan kegiatan
-- `/api/news` - Artikel berita dan pengumuman
-- `/api/gallery` - Galeri foto dan video kegiatan
-- `/api/lecturers` - Data dosen dan pembimbing
-- `/api/functionaries` - Pengurus himpunan
-- `/api/members` - Data anggota himpunan
-- `/api/projects` - Proyek-proyek himpunan
-
-### Cara Menjalankan
-
-#### Frontend
-1. Masuk ke direktori frontend:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Jalankan server development:
-   ```bash
-   npm run dev
-   ```
-4. Frontend akan berjalan di http://localhost:5173
-
-#### Backend
-1. Pastikan MongoDB sudah berjalan
-2. Masuk ke direktori backend:
-   ```bash
-   cd backend
-   ```
-3. Copy `.env.example` menjadi `.env` dan sesuaikan konfigurasi
-4. Install dependencies:
-   ```bash
-   npm install
-   ```
-5. Jalankan server development:
-   ```bash
-   npm run dev
-   ```
-6. Backend akan berjalan di http://localhost:5000
-
-### Seeding Database
-
-Untuk mengisi database dengan data awal:
-
-```bash
-cd backend
-npm run seed          # Menjalankan semua seeder
-npm run seed:event    # Hanya menjalankan seeder event
-```
-
-## Fitur Utama Website
+## Fitur Utama
 
 1. **Manajemen Keanggotaan**
    - Profil anggota
@@ -127,57 +77,88 @@ npm run seed:event    # Hanya menjalankan seeder event
    - Struktur departemen
    - Kontak dan sosial media
 
-## Program Konverter Data Anggota Himpunan
+## API Endpoints
 
-Kumpulan program untuk mengelola data anggota himpunan dalam format JSON dan teks.
+Backend menyediakan API untuk berbagai fitur:
 
-### Format Data
+- `/api/users` - Manajemen pengguna dan autentikasi
+- `/api/organization` - Informasi organisasi himpunan
+- `/api/events` - Pengelolaan acara dan kegiatan
+- `/api/news` - Artikel berita dan pengumuman
+- `/api/gallery` - Galeri foto dan video kegiatan
 
-#### Format Teks
-```
-Angkatan XXXX
+## Cara Menjalankan
 
-NAMA ANGGOTA
-NIM : XXXXXXXXXX
-Jenis Kelamin: XXXX
-Status Keaktifan: XXXX
-```
+### Prasyarat
+- Node.js (versi 16.x atau lebih tinggi)
+- MongoDB (lokal atau cloud)
+- NPM atau Yarn
 
-#### Format JSON
-```json
-{
-  "membersList": [
-    {
-      "id": 1,
-      "nama": "NAMA ANGGOTA",
-      "nim": "XXXXXXXXXX",
-      "angkatan": "XXXX",
-      "email": "email@mhs.unesa.ac.id",
-      "foto": "/default-avatar.png",
-      "instagram": "",
-      "linkedin": "",
-      "github": "",
-      "deskripsi": "",
-      "prestasi": [],
-      "keahlian": [],
-      "kontak": "",
-      "status": "xxxx",
-      "jenisKelamin": "XXXX"
-    }
-  ]
-}
-```
+### Frontend
+1. Masuk ke direktori frontend:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Buat file `.env` dengan konfigurasi:
+   ```
+   VITE_API_BASE_URL=http://localhost:5000/api
+   ```
+4. Jalankan server development:
+   ```bash
+   npm run dev
+   ```
+5. Frontend akan berjalan di http://localhost:5173
 
-## Repositori GitHub
+### Backend
+1. Pastikan MongoDB sudah berjalan atau memiliki akses ke MongoDB Atlas
+2. Masuk ke direktori backend:
+   ```bash
+   cd backend
+   ```
+3. Buat file `.env` dengan konfigurasi:
+   ```
+   PORT=5000
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/?
+   JWT_SECRET=yoursecretkey
+   JWT_EXPIRE=30d
+   NODE_ENV=development
+   CLIENT_URL=http://localhost:5173
+   ```
+4. Install dependencies:
+   ```bash
+   npm install
+   ```
+5. Jalankan server development:
+   ```bash
+   npm run dev
+   ```
+6. Backend akan berjalan di http://localhost:5000
 
-Proyek ini tersedia di GitHub melalui alamat berikut:
-```
-git@github.com:ryuzenazari/hmptiunesa.git
-```
+### Seeding Database
 
-Untuk mengkloning repositori ini:
+Untuk mengisi database dengan data awal:
+
 ```bash
-git clone git@github.com:ryuzenazari/hmptiunesa.git
+cd backend
+npm run seed          # Menjalankan semua seeder
+```
+
+## Produksi dan Deployment
+
+### Build Frontend
+```bash
+cd frontend
+npm run build
+```
+
+### Menjalankan Backend di Produksi
+```bash
+cd backend
+npm start
 ```
 
 ## Kontribusi
